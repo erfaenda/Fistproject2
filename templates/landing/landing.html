@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница</title>
+    <!--какойто уккраденный стиль -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--Мой тестовый убогий стиль-->
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-<h1>Добро пожаловать в клуб!</h1>
-<h1>Как ты? {{ name }}</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="title">Спасибо что зашли, наш магазин в скором времени будет открыт!</h1>
+                <h1 class="title">Оставьте свой адрес электронной почты, что бы мы смогли оповестить вас {{ name }}</h1>
+            </div>
+
 <p>Сегодня {{ current_day }}</p>
 
 </body>
