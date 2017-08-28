@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h1>Добро пожаловать в клуб!</h1>
+<h1>Как ты? {{ name }}</h1>
+<p>Сегодня {{ current_day }}</p>
+
+</body>
+</html>
